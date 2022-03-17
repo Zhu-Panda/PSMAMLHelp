@@ -55,4 +55,4 @@
 
 ```
 
-For more, check out [Syntax.md](./Syntax.md).
+For more info, check out [Syntax.md](./Syntax.md).
