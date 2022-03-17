@@ -20,3 +20,21 @@
 </command:command>
 
 ```
+
+## 3. Command Name, Synopsis And Description
+
+```xml
+
+<command:details>
+    <command:name><!--command name (verb-noun) here --></command:name>
+    <command:verb><!--command verb here --></command:verb>
+    <command:noun><!--command noun here --></command:noun>
+    <maml:description>
+        <maml:para><!-- synopsis here --></maml:para>
+    </maml:description>
+</command:details>
+<maml:description>
+    <maml:para><!-- description here --></maml:para>
+</maml:description>
+
+```
