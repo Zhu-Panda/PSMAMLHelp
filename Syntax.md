@@ -5,7 +5,7 @@
 ```xml
 
 <command:syntaxItem> <!-- main container -->
-    <!-- parameters for this parameter set go here -->
+    <!-- syntax for this parameter set goes here -->
 </command:syntaxItem>
 
 ```
