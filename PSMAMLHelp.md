@@ -10,3 +10,13 @@
 </helpItems>
 
 ```
+
+## 2. Command
+
+```xml
+
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp"> <!-- command container with a bunch of schemas -->
+    <!-- everything inside... -->
+</command:command>
+
+```
