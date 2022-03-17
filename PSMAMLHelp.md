@@ -45,10 +45,10 @@
 
 <command:syntax>
     <command:syntaxItem>
-        <!-- parameter set 1 (default parameter set) parameters go here-->
+        <!-- parameter set 1 (default parameter set) parameters go here -->
     </command:syntaxItem>
     <command:syntaxItem>
-        <!-- parameter set 2 parameters go here-->
+        <!-- parameter set 2 parameters go here -->
     </command:syntaxItem>
     <!-- and so on... -->
 </command:syntax>
