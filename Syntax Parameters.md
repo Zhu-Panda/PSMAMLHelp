@@ -45,7 +45,7 @@ What you need is this block:
 <pre><code>
 
 <a href="#required">Required?</a>                    false
-Position?                    0
+<a href="#position">Position?</a>                    0
 Default value                None
 Accept pipeline input?       False
 Accept wildcard characters?  false
@@ -59,6 +59,17 @@ Just a regular boolean:
 ```xml
 
 <command:parameter required="true">
+</command:parameter>
+
+```
+
+### 2.2. Position Attribute <a name="position"></a>
+
+A number if it is positional, or ```named``` if it is named:
+
+```xml
+
+<command:parameter position="0">
 </command:parameter>
 
 ```
