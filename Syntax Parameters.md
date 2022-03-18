@@ -1,11 +1,22 @@
 # Syntax Parameters
 
-## 1. Parameter Container
+## 1. Parameter Container Structure
 
 ```xml
 
 <command:parameter> <!-- with attrs -->
-    <!-- help for this parameter -->
+    <maml:name><!-- parameter name --></maml:name>
+    <maml:description>
+        <maml:para><!-- parameter description --></maml:para>
+        </maml:description>
+        <command:parameterValue> <!-- with attrs -->
+            <!-- parameter's .NET type -->
+        </command:parameterValue>
+        <dev:type>
+            <maml:name><!-- parameter's .NET type --></maml:name>
+            <maml:uri />
+        </dev:type>
+    <dev:defaultValue><!-- parameter's default value --></dev:defaultValue>
 </command:parameter>
 
 ```
