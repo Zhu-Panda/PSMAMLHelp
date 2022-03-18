@@ -42,7 +42,7 @@ PARAMETERS
 
 What you need is this block:
 
-<code><pre>
+<pre><code>
 
 <a href="#required">Required?</a>                    false
 Position?                    0
@@ -50,7 +50,7 @@ Default value                None
 Accept pipeline input?       False
 Accept wildcard characters?  false
 
-</pre></code>
+</code></pre>
 
 ### 2.1. Required Attribute <a name="required"></a>
 
