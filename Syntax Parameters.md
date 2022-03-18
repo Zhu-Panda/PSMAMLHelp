@@ -51,3 +51,14 @@ Accept pipeline input?       False
 Accept wildcard characters?  false
 
 ```
+
+### 2.1. Required Attribute
+
+Just a regular boolean:
+
+```xml
+
+<command:parameter required="true">
+</command:parameter>
+
+```
