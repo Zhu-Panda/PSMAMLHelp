@@ -47,7 +47,7 @@ What you need is this block:
 <a href="#required">Required?</a>                    false
 <a href="#position">Position?</a>                    0
 Default value                None
-Accept pipeline input?       False
+<a href="#pipelineInput">Accept pipeline input?</a>       False
 Accept wildcard characters?  false
 
 </code></pre>
@@ -70,6 +70,28 @@ A number if it is positional, or ```named``` if it is named:
 ```xml
 
 <command:parameter position="0">
+</command:parameter>
+
+```
+
+### 2.3. Pipeline Input Attribute <a name="pipelineInput"></a>
+
+This attribute can be set to 1 of the following 4 values:
+
+```xml
+
+true (ByValue) <!-- pipe by value -->
+true (ByPropertyName) <!-- pipe by property name -->
+true (ByValue, ByPropertyName) <!-- pipe by both -->
+false <!-- cannot pipe-->
+
+```
+
+Example:
+
+```xml
+
+<command:parameter pipelineInput="false">
 </command:parameter>
 
 ```
