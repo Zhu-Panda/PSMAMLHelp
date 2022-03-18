@@ -48,7 +48,7 @@ What you need is this block:
 <a href="#position">Position?</a>                    0
 Default value                None
 <a href="#pipelineInput">Accept pipeline input?</a>       False
-Accept wildcard characters?  false
+<a href="#globbing">Accept wildcard characters?</a>  false
 
 </code></pre>
 
@@ -92,6 +92,17 @@ Example:
 ```xml
 
 <command:parameter pipelineInput="false">
+</command:parameter>
+
+```
+
+### 2.4. Globbing Attribute <a name="globbing"></a>
+
+Just a regular boolean:
+
+```xml
+
+<command:parameter globbing="true">
 </command:parameter>
 
 ```
