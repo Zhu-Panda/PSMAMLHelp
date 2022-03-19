@@ -155,3 +155,27 @@ Just a regular boolean:
 </command:parameterValue>
 
 ```
+
+## 5. Constructing The Syntax Diagram
+
+First start with the command name:
+
+```
+
+SYNTAX
+    Get-RecordFromDB
+
+```
+
+Then list all parameters from all parameter sets:
+
+```xml
+
+SYNTAX
+    Get-RecordFromDB -Name -Type <!-- get the default parameter set first -->
+    Get-RecordFromDB -Id -Type
+    <!-- order parameters in each set by category in this order: positional, unique, common -->
+    <!-- then order them in each category as you intended -->
+    <!-- don't add common parameters as Get-Help will add them for you -->
+
+```
