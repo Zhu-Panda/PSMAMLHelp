@@ -2,6 +2,8 @@
 
 ## 1. Parameter Container Structure
 
+<a name="defaultValue">
+
 ```xml
 
 <command:parameter> <!-- with attrs -->
@@ -57,7 +59,7 @@ What you need is this block:
 
 <a href="#required">Required?</a>                    false
 <a href="#position">Position?</a>                    0
-Default value                None
+<a href="#defaultValue">Default value</a>                None
 <a href="#pipelineInput">Accept pipeline input?</a>       False
 <a href="#globbing">Accept wildcard characters?</a>  false
 
