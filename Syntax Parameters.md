@@ -117,3 +117,14 @@ Just a regular boolean:
 </command:parameter>
 
 ```
+
+### 2.5. Required Attribute (ParameterValue)
+
+Just a regular boolean:
+
+```xml
+
+<command:parameterValue required="true">
+</command:parameterValue>
+
+```
