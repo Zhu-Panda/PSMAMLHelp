@@ -203,3 +203,13 @@ SYNTAX
     Get-RecordFromDB -Id <System.Int32> -Type Basic Detailed -Format
 
 ```
+
+Enclose optional parameters and optional parameter names (for positional parameters) in square brackets:
+
+```
+
+SYNTAX
+    Get-RecordFromDB [[-Name] <System.String>] [-Type Basic Detailed] [-Format]
+    Get-RecordFromDB -Id <System.Int32> [-Type Basic Detailed] [-Format]
+
+```
