@@ -193,3 +193,13 @@ SYNTAX
     <!-- types can be abbreviated as long as their meaning is clear, e.g. System.String to string, and System.Int32 to int -->
 
 ```
+
+Add angle brackets around placeholders:
+
+```
+
+SYNTAX
+    Get-RecordFromDB -Name <System.String> -Type Basic Detailed -Format
+    Get-RecordFromDB -Id <System.Int32> -Type Basic Detailed -Format
+
+```
