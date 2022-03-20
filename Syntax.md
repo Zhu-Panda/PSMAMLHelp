@@ -121,7 +121,7 @@ This attribute can be set to 1 of the following 4 values:
 true (ByValue) <!-- pipe by value -->
 true (ByPropertyName) <!-- pipe by property name -->
 true (ByValue, ByPropertyName) <!-- pipe by both -->
-false <!-- cannot pipe-->
+false <!-- cannot pipe -->
 
 ```
 
@@ -160,7 +160,7 @@ Just a regular boolean:
 
 First start with the command name:
 
-```
+```ps1
 
 SYNTAX
     Get-RecordFromDB
@@ -169,28 +169,28 @@ SYNTAX
 
 Then list all parameters from all parameter sets:
 
-```xml
+```ps1
 
 SYNTAX
-    Get-RecordFromDB -Name -Type -Format <!-- get the default parameter set first -->
+    Get-RecordFromDB -Name -Type -Format # get the default parameter set first 
     Get-RecordFromDB -Id -Type -Format
-    <!-- order parameters in each set by category in this order: positional, unique, common -->
-    <!-- then order them in each category as you intended -->
-    <!-- don't add common parameters as Get-Help will add them for you -->
+    # order parameters in each set by category in this order: positional, unique, common
+    # then order them in each category as you intended
+    # don't add common parameters as Get-Help will add them for you
 
 ```
 
 Add the parameter values:
 
-```xml
+```ps1
 
 SYNTAX
     Get-RecordFromDB -Name System.String -Type Basic Detailed -Format
     Get-RecordFromDB -Id System.Int32 -Type Basic Detailed -Format
-    <!-- parameter values are represented by their .NET types -->
-    <!-- except for enums, where all possible values are listed -->
-    <!-- and switches, which have no value -->
-    <!-- types can be abbreviated as long as their meaning is clear, e.g. System.String to string, and System.Int32 to int -->
+    # parameter values are represented by their .NET types
+    # except for enums, where all possible values are listed
+    # and switches, which have no value
+    # types can be abbreviated as long as their meaning is clear, e.g. System.String to string, and System.Int32 to int
 
 ```
 
