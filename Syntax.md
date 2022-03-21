@@ -41,7 +41,7 @@
             <command:parameterValue required="false" command:variableLength="false"><!-- value 2 --></command:parameterValue>
         <!-- and so on... -->
         </command:parameterValueGroup>
-        <command:parameterValue required="true">
+        <command:parameterValue required="true"> <!-- with attrs -->
             <!-- parameter's .NET type -->
         </command:parameterValue>
         <dev:type>
