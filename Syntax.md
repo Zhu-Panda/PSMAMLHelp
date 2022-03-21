@@ -42,7 +42,7 @@
         <!-- and so on... -->
     </command:parameterValueGroup>
     <command:parameterValue required="true">
-            <!-- parameter's .NET type -->
+        <!-- parameter's .NET type -->
     </command:parameterValue>
     <dev:type>
         <maml:name><!-- parameter's .NET type --></maml:name>
