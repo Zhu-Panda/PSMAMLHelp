@@ -237,3 +237,20 @@ SYNTAX
     Get-RecordFromDB -Id <System.Int32> [-Type {Basic | Detailed}] [-Format]
 
 ```
+
+## 6. Transforming The Diagram To XML
+
+First setup the ```<command:syntax>```-```<command:syntaxItem>``` structure:
+
+```xml
+
+<command:syntax>
+    <command:syntaxItem>
+        <!-- parameter set 1 -->
+    </command:syntaxItem>
+    <command:syntaxItem>
+        <!-- parameter set 2 -->
+    </command:syntaxItem>
+</command:syntax>
+
+```
