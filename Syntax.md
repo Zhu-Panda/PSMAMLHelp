@@ -35,19 +35,19 @@
     <maml:name><!-- parameter name --></maml:name>
     <maml:description>
         <maml:para><!-- parameter description --></maml:para>
-        </maml:description>
-        <command:parameterValueGroup> <!-- optional, used to specify possible values of a parameter (like in a enum) -->
-            <command:parameterValue required="false" command:variableLength="false"><!-- value 1 --></command:parameterValue>
-            <command:parameterValue required="false" command:variableLength="false"><!-- value 2 --></command:parameterValue>
+    </maml:description>
+    <command:parameterValueGroup> <!-- optional, used to specify possible values of a parameter (like in a enum) -->
+        <command:parameterValue required="false" command:variableLength="false"><!-- value 1 --></command:parameterValue>
+        <command:parameterValue required="false" command:variableLength="false"><!-- value 2 --></command:parameterValue>
         <!-- and so on... -->
-        </command:parameterValueGroup>
-        <command:parameterValue required="true"> <!-- with attrs -->
+    </command:parameterValueGroup>
+    <command:parameterValue required="true"> <!-- with attrs -->
             <!-- parameter's .NET type -->
-        </command:parameterValue>
-        <dev:type>
-            <maml:name><!-- parameter's .NET type --></maml:name>
-            <maml:uri />
-        </dev:type>
+    </command:parameterValue>
+    <dev:type>
+        <maml:name><!-- parameter's .NET type --></maml:name>
+        <maml:uri />
+    </dev:type>
     <dev:defaultValue><!-- parameter's default value --></dev:defaultValue>
 </command:parameter>
 
