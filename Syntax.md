@@ -254,3 +254,18 @@ First setup the ```<command:syntax>```-```<command:syntaxItem>``` structure:
 </command:syntax>
 
 ```
+
+Then add the command name:
+
+```xml
+
+<command:syntax>
+    <command:syntaxItem>
+        <maml:name>Get-RecordFromDB</maml:name>
+    </command:syntaxItem>
+    <command:syntaxItem>
+        <maml:name>Get-RecordFromDB</maml:name>
+    </command:syntaxItem>
+</command:syntax>
+
+```
