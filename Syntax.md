@@ -161,6 +161,9 @@ Just a regular boolean:
 
 ```
 
+> **Note:**
+> This attribute's use is unclear. It is best to follow the code samples in this document.
+
 ## 5. Constructing The Syntax Diagram
 
 First start with the command name:
