@@ -27,7 +27,7 @@
 
 ## 3. Parameter Container Structure
 
-<a name="defaultValue">
+<a name="paramContainerStructure"><a name="defaultValue">
 
 ```xml
 
@@ -265,6 +265,99 @@ Then add the command name:
     </command:syntaxItem>
     <command:syntaxItem>
         <maml:name>Get-RecordFromDB</maml:name>
+    </command:syntaxItem>
+</command:syntax>
+
+```
+
+Add parameters according to the diagram and the [parameter container structure](#paramContainerStructure):
+
+```xml
+
+<command:syntax>
+    <command:syntaxItem>
+        <maml:name>Get-RecordFromDB</maml:name>
+        <command:parameter required="true" position="0" pipelineInput="false" globbing="true">
+            <maml:name>Name</maml:name>
+            <maml:description>
+                <maml:para>Name of record.</maml:para>
+            </maml:description>
+            <command:parameterValue required="true">System.String</command:parameterValue>
+            <dev:type>
+                <maml:name>System.String</maml:name>
+                <maml:uri />
+            </dev:type>
+            <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" position="named" pipelineInput="false" globbing="false">
+            <maml:name>Type</maml:name>
+            <maml:description>
+                <maml:para>Query type.</maml:para>
+            </maml:description>
+            <command:parameterValueGroup>
+                <command:parameterValue required="false" command:variableLength="false">Basic</command:parameterValue>
+                <command:parameterValue required="false" command:variableLength="false">Detailed</command:parameterValue>
+            </command:parameterValueGroup>
+            <command:parameterValue required="true">System.String</command:parameterValue>
+            <dev:type>
+                <maml:name>System.String</maml:name>
+                <maml:uri />
+            </dev:type>
+            <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" position="named" pipelineInput="false" globbing="false">
+            <maml:name>Format</maml:name>
+            <maml:description>
+                <maml:para>Switch to format the result.</maml:para>
+            </maml:description>
+            <dev:type>
+                <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+                <maml:uri />
+            </dev:type>
+            <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+    </command:syntaxItem>
+    <command:syntaxItem>
+        <maml:name>Get-RecordFromDB</maml:name>
+        <command:parameter required="true" position="named" pipelineInput="false" globbing="true">
+            <maml:name>Id</maml:name>
+            <maml:description>
+                <maml:para>ID of record.</maml:para>
+            </maml:description>
+            <command:parameterValue required="true">System.Int32</command:parameterValue>
+            <dev:type>
+                <maml:name>System.Int32</maml:name>
+                <maml:uri />
+            </dev:type>
+            <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" position="named" pipelineInput="false" globbing="false">
+            <maml:name>Type</maml:name>
+            <maml:description>
+                <maml:para>Query type.</maml:para>
+            </maml:description>
+            <command:parameterValueGroup>
+                <command:parameterValue required="false" command:variableLength="false">Basic</command:parameterValue>
+                <command:parameterValue required="false" command:variableLength="false">Detailed</command:parameterValue>
+            </command:parameterValueGroup>
+            <command:parameterValue required="true">System.String</command:parameterValue>
+            <dev:type>
+                <maml:name>System.String</maml:name>
+                <maml:uri />
+            </dev:type>
+            <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" position="named" pipelineInput="false" globbing="false">
+            <maml:name>Format</maml:name>
+            <maml:description>
+                <maml:para>Switch to format the result.</maml:para>
+            </maml:description>
+            <dev:type>
+                <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+                <maml:uri />
+            </dev:type>
+            <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
     </command:syntaxItem>
 </command:syntax>
 
