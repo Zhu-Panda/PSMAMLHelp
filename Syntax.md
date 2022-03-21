@@ -36,7 +36,12 @@
     <maml:description>
         <maml:para><!-- parameter description --></maml:para>
         </maml:description>
-        <command:parameterValue> <!-- with attrs -->
+        <command:parameterValueGroup> <!-- optional, used to specify possible values of a parameter (like in a enum) -->
+            <command:parameterValue required="false" command:variableLength="false"><!-- value 1 --></command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false"><!-- value 2 --></command:parameterValue>
+        <!-- and so on... -->
+        </command:parameterValueGroup>
+        <command:parameterValue required="true">
             <!-- parameter's .NET type -->
         </command:parameterValue>
         <dev:type>
@@ -217,5 +222,15 @@ Enclose optional parameters and optional parameter names (for positional paramet
 SYNTAX
     Get-RecordFromDB [[-Name] <System.String>] [-Type Basic Detailed] [-Format]
     Get-RecordFromDB -Id <System.Int32> [-Type Basic Detailed] [-Format]
+
+```
+
+If the user can choose from a number of values (e.g. in enums), wrap all the choices in curly brackets and separate them with ```|```:
+
+```
+
+SYNTAX
+    Get-RecordFromDB [[-Name] <System.String>] [-Type {Basic | Detailed}] [-Format]
+    Get-RecordFromDB -Id <System.Int32> [-Type {Basic | Detailed}] [-Format]
 
 ```
