@@ -46,7 +46,7 @@
     </command:parameterValue>
     <dev:type>
         <maml:name><!-- parameter's .NET type --></maml:name>
-        <maml:uri />
+        <maml:uri><!-- optional reference url --></maml:uri>
     </dev:type>
     <dev:defaultValue><!-- parameter's default value --></dev:defaultValue>
 </command:parameter>

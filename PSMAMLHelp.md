@@ -90,7 +90,7 @@ For more info, check out [Syntax.md](./Syntax.md).
 <command:inputType>
     <dev:type>
         <maml:name><!-- .NET type --></maml:name>
-        <maml:uri />
+        <maml:uri><!-- optional reference url --></maml:uri>
     </dev:type>
     <maml:description>
         <maml:para><!-- input type description --></maml:para>
@@ -116,7 +116,7 @@ For more info, check out [Syntax.md](./Syntax.md).
 <command:returnValue>
     <dev:type>
         <maml:name><!-- .NET type --></maml:name>
-        <maml:uri />
+        <maml:uri><!-- optional reference url --></maml:uri>
     </dev:type>
     <maml:description>
         <maml:para><!-- return type description --><maml:para>
