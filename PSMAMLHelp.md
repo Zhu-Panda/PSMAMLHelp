@@ -124,3 +124,23 @@ For more info, check out [Syntax.md](./Syntax.md).
 </command:returnValue>
 
 ```
+
+## 8. Command Notes
+
+```xml
+
+<maml:alertSet>
+    <maml:alert><!-- note 1 --></maml:alert>
+    <maml:alert><!-- note 2 --></maml:alert>
+    <!-- and so on... -->
+</maml:alertSet>
+
+```
+
+```xml
+
+<maml:alert>
+    <maml:para><!-- note content --></maml:para>
+</maml:alert>
+
+```
