@@ -98,3 +98,29 @@ For more info, check out [Syntax.md](./Syntax.md).
 </command:inputType>
 
 ```
+
+## 7. Command Return Types
+
+```xml
+
+<command:returnValues>
+    <command:returnValue><!-- return type 1 --></command:returnValue>
+    <command:returnValue><!-- return type 2 --></command:returnValue>
+    <!-- and so on... -->
+</command:returnValues>
+
+```
+
+```xml
+
+<command:returnValue>
+    <dev:type>
+        <maml:name><!-- .NET type --></maml:name>
+        <maml:uri />
+    </dev:type>
+    <maml:description>
+        <maml:para><!-- type description --><maml:para>
+    </maml:description>
+</command:returnValue>
+
+```
