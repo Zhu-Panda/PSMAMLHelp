@@ -144,3 +144,31 @@ For more info, check out [Syntax.md](./Syntax.md).
 </maml:alert>
 
 ```
+
+## 9. Command Examples
+
+```xml
+
+<command:examples>
+    <command:example><!-- example 1 --></command:example>
+    <command:example><!-- example 2 --></command:example>
+    <!-- and so on... -->
+</command:examples>
+
+```
+
+```xml
+
+<command:example>
+    <maml:title><!-- example title --></maml:title>
+    <maml:introduction>
+        <maml:para><!-- PS prompt --></maml:para>
+    </maml:introduction>
+    <dev:code><!-- example command --></dev:code>
+    <dev:remarks>
+        <maml:para><!-- example description --></maml:para>
+    </dev:remarks>
+</command:example>
+
+
+```
