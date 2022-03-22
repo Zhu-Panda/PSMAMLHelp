@@ -25,9 +25,9 @@
 
 ```
 
-## 3. Parameter Container Structure
+## 3. Parameter Container Structure <a name="paramContainerStructure">
 
-<a name="paramContainerStructure"><a name="defaultValue">
+<a name="defaultValue">
 
 ```xml
 
