@@ -72,3 +72,29 @@ For more info, check out [Syntax.md](./Syntax.md).
 > **Note:**  
 > * The ```<command:parameter>``` tags are the same as the one [here](./Syntax.md#paramContainerStructure), so you can copy and paste them in your help file.
 > * All parameters in all parameter sets should be listed **exactly once**.
+
+## 6. Command Input Types
+
+```xml
+
+<command:inputTypes>
+    <command:inputType><!-- input type 1 --></command:inputType>
+    <command:inputType><!-- input type 2 --></command:inputType>
+    <!-- and so on... -->
+</command:inputTypes>
+
+```
+
+```xml
+
+<command:inputType>
+    <dev:type>
+        <maml:name><!-- .NET type --></maml:name>
+        <maml:uri />
+    </dev:type>
+    <maml:description>
+        <maml:para><!-- type description --></maml:para>
+    </maml:description>
+</command:inputType>
+
+```
