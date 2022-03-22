@@ -93,7 +93,7 @@ For more info, check out [Syntax.md](./Syntax.md).
         <maml:uri />
     </dev:type>
     <maml:description>
-        <maml:para><!-- type description --></maml:para>
+        <maml:para><!-- input type description --></maml:para>
     </maml:description>
 </command:inputType>
 
@@ -119,7 +119,7 @@ For more info, check out [Syntax.md](./Syntax.md).
         <maml:uri />
     </dev:type>
     <maml:description>
-        <maml:para><!-- type description --><maml:para>
+        <maml:para><!-- return type description --><maml:para>
     </maml:description>
 </command:returnValue>
 
