@@ -56,3 +56,19 @@
 ```
 
 For more info, check out [Syntax.md](./Syntax.md).
+
+## 5. Command Parameters
+
+```xml
+
+<command:parameters>
+    <command:parameter><!-- parameter 1 --></command:parameter>
+    <command:parameter><!-- parameter 2 --></command:parameter>
+    <!-- and so on... -->
+</command:parameters>
+
+```
+
+> **Note:**  
+> * The ```<command:parameter>``` tags are the same as the one [here](./Syntax.md#paramContainerStructure), so you can copy and paste them in your help file.
+> * All parameters in all parameter sets should be listed **exactly once**.
