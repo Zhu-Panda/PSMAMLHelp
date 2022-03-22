@@ -172,3 +172,24 @@ For more info, check out [Syntax.md](./Syntax.md).
 
 
 ```
+
+## Command Related Links
+
+```xml
+
+<maml:relatedLinks>
+    <maml:navigationLink><!-- link 1 --></maml:navigationLink>
+    <maml:navigationLink><!-- link 2 --></maml:navigationLink>
+    <!-- and so on.. -->
+</maml:relatedLinks>
+
+```
+
+```xml
+
+<maml:navigationLink>
+    <maml:linkText><!-- usually the topic name --></maml:linkText>
+    <maml:uri><!-- optional reference URL --></maml:uri>
+</maml:navigationLink>
+
+```
